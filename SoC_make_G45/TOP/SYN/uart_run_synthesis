@@ -1,0 +1,11 @@
+#!/bin/csh -f
+
+## Start Time
+echo -n "UART Syn Start : " > cds_uart_syn_runtime
+date >> cds_uart_syn_runtime
+
+genus -f ./script/uart_45nm.tcl -log ./log/uart_all.log
+
+## End Time
+echo -n "UART Syn End : " >> cds_uart_syn_runtime
+date >> cds_uart_syn_runtime

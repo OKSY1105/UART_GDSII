@@ -1,0 +1,121 @@
+//Note: Enable Unified Schematic Viewer usage.
+//Note: Enable buffer/inverter collapsing usage on schematics
+//Note: Enable bus collapsing usage on schematics
+//Note: Enable independent UI styles on each schematics
+//Note: Set schematic traverse max. level to 200 !!!
+//Note: Set schematic traverse max. time to 300(seconds) !!!
+//Note: Enable Schematic concise drawing support
+SETUP> dofile ./uart_script.tcl
+// Command: dofile ./uart_script.tcl
+// Command: set log file ./log/all.log -replace
+CPU time     : 0.32    seconds
+Elapse time  : 38      seconds
+Memory usage : 79.93   M bytes
+// Command: read library -verilog -both \
+//          	../../../GPDK045/digital/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v0_basicCells.v \
+//          	../../../GPDK045/digital/gsclib045_all_v4.4/gsclib045/verilog/fast_vdd1v0_basicCells.v \
+//          	../../../GPDK045/digital/giolib045_v3.5/vlog/pads_SS_s1vg.v
+// Parsing file ../../../GPDK045/digital/gsclib045_all_v4.4/gsclib045/verilog/slow_vdd1v0_basicCells.v ...
+// Parsing file ../../../GPDK045/digital/gsclib045_all_v4.4/gsclib045/verilog/fast_vdd1v0_basicCells.v ...
+// Parsing file ../../../GPDK045/digital/giolib045_v3.5/vlog/pads_SS_s1vg.v ...
+// Warning: (RTL14.1) Fanout load of the signal is removed (occurrence:120)
+// Note: (VLG8) Buffer inserted (occurrence:2784)
+// Note: (VLG9.2) The `define macro is used (occurrence:14)
+// Warning: (UDP3.2) Primitive has unspecified term(s) (occurrence:4)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:986)
+// Warning: (DIR6.2) Supported compiler directive is detected (occurrence:2056)
+// Note: (DIR6.3) Conditional compiler directive clause is effective (occurrence:28)
+// Warning: (IGN3.2) Duplicate modules/entities are detected. Subsequent modules/entities are ignored (occurrence:489)
+// Warning: (HRC1.4) Module/entity is empty (blackboxed) (occurrence:2)
+// Warning: (HRC3.2a) Module/entity has no I/O ports (occurrence:18)
+// Warning: (HRC3.10b) An input port is declared, but it is not used. Module is empty (occurrence:1)
+// Note: Read VERILOG library successfully
+CPU time     : 0.60    seconds
+Elapse time  : 40      seconds
+Memory usage : 105.88  M bytes
+// Command: read design ../RTL/uart_top.v ../RTL/uart_tx.v ../RTL/uart_rx.v ../RTL/baud_rate_gen.v ../RTL/fifo.v -verilog -golden -define USE_IO_PAD ///golden
+// Parsing file ../RTL/uart_top.v ...
+// Parsing file ../RTL/uart_tx.v ...
+// Parsing file ../RTL/uart_rx.v ...
+// Parsing file ../RTL/baud_rate_gen.v ...
+// Parsing file ../RTL/fifo.v ...
+// Golden root module is set to 'uart_top'
+// Warning: (RTL1.2) Variable/signal is assigned by multiple non-blocking assignments (occurrence:4)
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:14)
+// Warning: (RTL3.1) Variable/signal is unassigned in asynchronous set/reset (occurrence:16)
+// Note: (RTL5.5a) Default case item with non-X assignment(s) (occurrence:2)
+// Note: (RTL5.7) Default case item with inconsistent assignment(s). (occurrence:3)
+// Warning: (RTL7.10a) Comparison with different data sizes (occurrence:7)
+// Warning: (RTL23) Flop with asynchronous hold might cause non-equivalence with synthesized netlist (occurrence:16)
+// Note: (VLG6.4) Supported system datapath function call (occurrence:3)
+// Note: (VLG9.2) The `define macro is used (occurrence:1)
+// Warning: (DIR6.2) Supported compiler directive is detected (occurrence:3)
+// Note: (DIR6.3) Conditional compiler directive clause is effective (occurrence:1)
+// Note: Read VERILOG design successfully
+// Command: read design ../SYN/mapped/uart_top_syn_final.v -verilog -revised ///revised
+// Parsing file ../SYN/mapped/uart_top_syn_final.v ...
+// Revised root module is set to 'uart_top'
+// Warning: (RTL14) Signal has input but it has no output (occurrence:7)
+// Note: Read VERILOG design successfully
+// Command: set system mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            13     17     339       369     
+--------------------------------------------------------------------------------
+Revised           13     17     339       369     
+================================================================================
+// Command: add compare points -all
+// 356 compared points added to compare list
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           17     339       356     
+================================================================================
+// Command: report verification
+================================================================================
+                            Verification Report
+--------------------------------------------------------------------------------
+Category                                                                  Count
+--------------------------------------------------------------------------------
+1. Non-standard modeling options used:                                      0
+--------------------------------------------------------------------------------
+2. Incomplete verification:                                                 0
+--------------------------------------------------------------------------------
+3. User modification to design:                                             0
+--------------------------------------------------------------------------------
+4. Conformal Constraint Designer clock domain crossing checks recommended:  0
+--------------------------------------------------------------------------------
+5. Design ambiguity:                                                        1
+     Duplicate module definition:                              yes
+--------------------------------------------------------------------------------
+6. Compare Results:                                                        PASS
+================================================================================
+// Command: report statistics
+Mapping and compare statistics
+================================================================================
+                     Compare Result       Golden            Revised
+--------------------------------------------------------------------------------
+Root module name                          uart_top          uart_top          
+
+Primary inputs                                13                 13
+   Mapped                                     13                 13
+
+Primary outputs                               17                 17
+   Mapped                                     17                 17
+      Equivalent                 17
+
+State key points                             339                339
+   Mapped                                    339                339
+      Equivalent                339
+================================================================================
+
+
