@@ -2,10 +2,13 @@
 
 module tb_uart_top;
 
-parameter CLK_FREQ_HZ = 100_000_000;
-parameter BAUD_RATE   = 115200;
-parameter DATA_BIT    = 8;
-parameter FIFO_DEPTH  = 16;
+parameter CLK_FREQ_HZ  = 100_000_000;
+parameter BAUD_RATE    = 115200;
+parameter DATA_BIT     = 8;
+parameter FIFO_DEPTH   = 16;
+parameter HEX_FILE     = "hello.hex";
+parameter HEX_MEM_SIZE = 1024;
+parameter HEX_TEST_LEN = 8;
 
 /*
  * 100 MHz clock -> 10 ns period
@@ -48,14 +51,17 @@ wire                   o_rx_fifo_full;
 
 
 // ============================================================
-// Testbench check
+// Testbench check & HEX memory
 // ============================================================
 
 reg                    tb_error;
 reg                    tb_done;
 
-reg [DATA_BIT-1:0]      tb_expected_data;
-reg [DATA_BIT-1:0]      tb_received_data;
+reg [DATA_BIT-1:0]     tb_expected_data;
+reg [DATA_BIT-1:0]     tb_received_data;
+
+reg [7:0]              hex_mem [0:HEX_MEM_SIZE-1];
+integer                hex_idx;
 
 
 // ============================================================
@@ -102,16 +108,33 @@ initial begin
         tb_uart_top.u_uart_top
     );
 
-    $shm_open("./dump/uart_sdf_pre");
+    $shm_open("./uart_dump/uart_sdf_pre");
 
 `else
 
-    $shm_open("./dump/uart_function_pre");
+    $shm_open("./uart_dump/uart_function_pre");
 
 `endif
 
     $shm_probe(tb_uart_top, "AC");
 
+end
+
+
+// ============================================================
+// Load hello.hex into hex_mem (Little Endian check)
+// ============================================================
+
+initial begin
+    for (hex_idx = 0; hex_idx < HEX_MEM_SIZE; hex_idx = hex_idx + 1) begin
+        hex_mem[hex_idx] = 8'h00;
+    end
+    $readmemh(HEX_FILE, hex_mem);
+    $display("============================================================");
+    $display("[HEX LOAD] Loaded %s into hex_mem", HEX_FILE);
+    $display("[HEX LOAD] Word 0 (hex_mem[3:0]) = %x%x%x%x", hex_mem[3], hex_mem[2], hex_mem[1], hex_mem[0]);
+    $display("[HEX LOAD] Word 1 (hex_mem[7:4]) = %x%x%x%x", hex_mem[7], hex_mem[6], hex_mem[5], hex_mem[4]);
+    $display("============================================================");
 end
 
 
@@ -169,8 +192,14 @@ task cpu_read_and_check;
         tb_expected_data = expected_data;
         tb_received_data = o_rhr_rdata;
 
-        if(o_rhr_rdata !== expected_data)
+        if(o_rhr_rdata !== expected_data) begin
             tb_error = 1'b1;
+            $display("[UART HEX TEST] ERROR at %0t ns : Expected=0x%02x, Received=0x%02x",
+                     $time, expected_data, o_rhr_rdata);
+        end else begin
+            $display("[UART HEX TEST] PASS  at %0t ns : TX=0x%02x -> RX=0x%02x",
+                     $time, expected_data, o_rhr_rdata);
+        end
 
         @(negedge i_clk);
 
@@ -340,7 +369,7 @@ end
 
 
 // ============================================================
-// Main Test
+// Main Test (Transmit & Verify bytes from hello.hex)
 // ============================================================
 
 initial begin
@@ -371,28 +400,12 @@ initial begin
         @(posedge i_clk);
 
 
-    // 0x55
-    cpu_write_byte(8'h55);
-
-    cpu_read_and_check(8'h55);
-
-
-    // 0xA5
-    cpu_write_byte(8'hA5);
-
-    cpu_read_and_check(8'hA5);
-
-
-    // 0x00
-    cpu_write_byte(8'h00);
-
-    cpu_read_and_check(8'h00);
-
-
-    // 0xFF
-    cpu_write_byte(8'hFF);
-
-    cpu_read_and_check(8'hFF);
+    // Transmit and verify first HEX_TEST_LEN (8) bytes from hello.hex
+    // (Word 0: 68 03 00 20 -> 20000368, Word 1: 65 01 00 00 -> 00000165)
+    for (hex_idx = 0; hex_idx < HEX_TEST_LEN; hex_idx = hex_idx + 1) begin
+        cpu_write_byte(hex_mem[hex_idx]);
+        cpu_read_and_check(hex_mem[hex_idx]);
+    end
 
 
     wait(o_lsr_temt == 1'b1);
@@ -403,6 +416,16 @@ initial begin
 
 
     tb_done = 1'b1;
+
+    if (tb_error == 1'b0) begin
+        $display("============================================================");
+        $display("TEST PASSED : All %0d bytes from %s transmitted & echoed OK!", HEX_TEST_LEN, HEX_FILE);
+        $display("============================================================");
+    end else begin
+        $display("============================================================");
+        $display("TEST FAILED : tb_error = %b", tb_error);
+        $display("============================================================");
+    end
 
 
     $stop;
@@ -416,12 +439,13 @@ end
 
 initial begin
 
-    #2_000_000;
+    #3_000_000;
 
 
     if(!tb_done) begin
 
         tb_error = 1'b1;
+        $display("[TIMEOUT] Simulation timed out before tb_done!");
 
         $stop;
 

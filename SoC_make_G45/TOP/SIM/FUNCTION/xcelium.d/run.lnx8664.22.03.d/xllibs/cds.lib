@@ -1,0 +1,2 @@
+define slow_vdd1v0_basicCells ./slow_vdd1v0_basicCells
+define pads_FF_s1vg ./pads_FF_s1vg

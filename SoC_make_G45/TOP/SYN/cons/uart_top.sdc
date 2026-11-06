@@ -23,7 +23,7 @@ reset_design
 #############################
 # The external i_clk port feeds uart_top directly (NO clock PAD yet).
 # 100 MHz = 10 ns; unlike Cortex-M0, do not use XTAL1 / MAIN_CLOCK.
-create_clock -period 1 -name UART_CLK [get_ports i_clk]
+create_clock -period 10 -name UART_CLK [get_ports i_clk]
 
 # Preliminary values reused from the original Cortex-M0 SDC.
 set_clock_latency -source -max 0.2 [get_clocks UART_CLK]

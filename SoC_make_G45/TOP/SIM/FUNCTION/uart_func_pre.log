@@ -1,20 +1,22 @@
 xrun(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	22.03-s012: Started on Oct 15, 2026 at 13:05:21 KST
+TOOL:	xrun(64)	22.03-s012: Started on Nov 07, 2026 at 03:34:23 KST
 xrun
 	-64bit
 	+max_err_count+50
 	+define+function_sim
 	-access +rwc
+	-profile
+	-profthread
 	-gui
 	-top tb_uart_top
 	../TESTBENCH/tb_uart.v
-	../../SYN/mapped/uart_top_syn_final.v
+	../../SYN/uart_mapped/uart_top_syn_final.v
 	-v /GPDK045/digital/giolib045_v3.5/vlog/pads_FF_s1vg.v
 	-v /GPDK045/digital/gsclib045_all_v4.4/gsclib045_svt_v4.4/gsclib045/verilog/slow_vdd1v0_basicCells.v
 	-l uart_func_pre.log
 Recompiling... reason: file '../TESTBENCH/tb_uart.v' is newer than expected.
-	expected: Wed Oct 14 16:18:20 2026
-	actual:   Wed Oct 14 22:36:36 2026
+	expected: Fri Nov  6 00:56:58 2026
+	actual:   Sat Nov  7 03:33:10 2026
 file: ../TESTBENCH/tb_uart.v
 	module worklib.tb_uart_top:v
 		errors: 0, warnings: 0
@@ -27,8 +29,8 @@ file: ../TESTBENCH/tb_uart.v
 		tb_uart_top
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.tb_uart_top:v <0x67aa14da>
-			streams:  15, words: 15815
+		worklib.tb_uart_top:v <0x10bb80a6>
+			streams:  16, words: 25269
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -37,11 +39,11 @@ file: ../TESTBENCH/tb_uart.v
 		UDPs:                     678       6
 		Primitives:              3691       5
 		Timing outputs:           806      68
-		Registers:                359      31
+		Registers:                361      33
 		Scalar wires:            1243       -
 		Expanded wires:             8       1
 		Always blocks:              1       1
-		Initial blocks:             5       5
+		Initial blocks:             6       6
 		Pseudo assignments:         8       8
 		Timing checks:           3327       -
 		Delayed tcheck signals:   942     139
@@ -53,17 +55,29 @@ xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mod
 Relinquished control to SimVision...
 xcelium> 
 xcelium> source /tools/cadence/XCELIUM2203/tools/xcelium/files/xmsimrc
-xcelium> database -open waves -into waves.shm -default
-Created default SHM database waves
-xcelium> probe -create -shm tb_uart_top.u_uart_top.i_clk tb_uart_top.u_uart_top.i_rst_n tb_uart_top.u_uart_top.i_uart_rxd tb_uart_top.u_uart_top.o_uart_txd tb_uart_top.u_uart_top.w_uart_rxd tb_uart_top.u_uart_top.w_uart_txd
-Created probe 1
 xcelium> run
 xmsim: *W,SHMPOPT: Some objects excluded from $shm_probe due to optimizations.
-            File: ../TESTBENCH/tb_uart.v, line = 113, pos = 13
+            File: ../TESTBENCH/tb_uart.v, line = 119, pos = 13
            Scope: tb_uart_top
             Time: 0 FS + 0
 
-Simulation stopped via $stop(1) at time 795235 NS + 0
+============================================================
+[HEX LOAD] Loaded hello.hex into hex_mem
+[HEX LOAD] Word 0 (hex_mem[3:0]) = 20000368
+[HEX LOAD] Word 1 (hex_mem[7:4]) = 00000165
+============================================================
+[UART HEX TEST] PASS  at 198835000 ns : TX=0x68 -> RX=0x68
+[UART HEX TEST] PASS  at 397555000 ns : TX=0x03 -> RX=0x03
+[UART HEX TEST] PASS  at 596275000 ns : TX=0x00 -> RX=0x00
+[UART HEX TEST] PASS  at 794995000 ns : TX=0x20 -> RX=0x20
+[UART HEX TEST] PASS  at 993715000 ns : TX=0x65 -> RX=0x65
+[UART HEX TEST] PASS  at 1192435000 ns : TX=0x01 -> RX=0x01
+[UART HEX TEST] PASS  at 1391155000 ns : TX=0x00 -> RX=0x00
+[UART HEX TEST] PASS  at 1589875000 ns : TX=0x00 -> RX=0x00
+============================================================
+TEST PASSED : All 8 bytes from hello.hex transmitted & echoed OK!
+============================================================
+Simulation stopped via $stop(1) at time 1590115 NS + 0
 xcelium> ^C
 xcelium> exit
-TOOL:	xrun(64)	22.03-s012: Exiting on Oct 15, 2026 at 13:11:30 KST  (total: 00:06:09)
+TOOL:	xrun(64)	22.03-s012: Exiting on Nov 07, 2026 at 03:35:38 KST  (total: 00:01:15)

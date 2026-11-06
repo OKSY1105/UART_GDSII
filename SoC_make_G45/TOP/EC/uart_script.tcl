@@ -7,7 +7,7 @@ read library -verilog -both \
 
 read design ../RTL/uart_top.v ../RTL/uart_tx.v ../RTL/uart_rx.v ../RTL/baud_rate_gen.v ../RTL/fifo.v -verilog -golden -define USE_IO_PAD ///golden
 
-read design ../SYN/mapped/uart_top_syn_final.v -verilog -revised ///revised
+read design ../SYN/uart_mapped/uart_top_syn_final.v -verilog -revised ///revised
 
 set system mode lec
 

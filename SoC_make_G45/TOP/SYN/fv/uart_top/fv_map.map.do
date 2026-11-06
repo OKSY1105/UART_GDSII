@@ -46,11 +46,11 @@ add mapped point u_baud_rate_gen/r_os_cnt[3]/q u_baud_rate_gen/r_os_cnt_reg_3/Q 
 add mapped point u_baud_rate_gen/r_os_cnt[2]/q u_baud_rate_gen/r_os_cnt_reg_2/Q -type DFF DFF
 add mapped point u_baud_rate_gen/r_os_cnt[1]/q u_baud_rate_gen/r_os_cnt_reg_1/Q -type DFF DFF
 add mapped point u_baud_rate_gen/r_baud_cnt[3]/q u_baud_rate_gen/r_baud_cnt_reg_3/Q -type DFF DFF
-add mapped point u_baud_rate_gen/r_baud_cnt[2]/q u_baud_rate_gen/r_baud_cnt_reg_2/Q -type DFF DFF
-add mapped point u_baud_rate_gen/r_baud_cnt[1]/q u_baud_rate_gen/r_baud_cnt_reg_1/Q -type DFF DFF
 add mapped point u_baud_rate_gen/r_baud_cnt[0]/q u_baud_rate_gen/r_baud_cnt_reg_0/Q -type DFF DFF
-add mapped point u_baud_rate_gen/o_os_tick/q u_baud_rate_gen/o_os_tick_reg/Q -type DFF DFF
+add mapped point u_baud_rate_gen/r_baud_cnt[1]/q u_baud_rate_gen/r_baud_cnt_reg_1/Q -type DFF DFF
+add mapped point u_baud_rate_gen/r_baud_cnt[2]/q u_baud_rate_gen/r_baud_cnt_reg_2/Q -type DFF DFF
 add mapped point u_baud_rate_gen/r_os_cnt[0]/q u_baud_rate_gen/r_os_cnt_reg_0/Q -type DFF DFF
+add mapped point u_baud_rate_gen/o_os_tick/q u_baud_rate_gen/o_os_tick_reg/Q -type DFF DFF
 add mapped point u_uart_rx/u_rx_fifo/fifo_count[0]/q u_uart_rx/u_rx_fifo/fifo_count_reg_0/Q -type DFF DFF
 add mapped point u_uart_rx/u_rx_fifo/fifo_count[1]/q u_uart_rx/u_rx_fifo/fifo_count_reg_1/Q -type DFF DFF
 add mapped point u_uart_rx/u_rx_fifo/fifo_count[2]/q u_uart_rx/u_rx_fifo/fifo_count_reg_2/Q -type DFF DFF
@@ -376,8 +376,8 @@ add mapped point u_uart_tx/r_tx_shift[7]/q u_uart_tx/r_tx_shift_reg_7/Q -type DF
 add mapped point u_uart_tx/r_tx_shift[3]/q u_uart_tx/r_tx_shift_reg_3/Q -type DFF DFF
 add mapped point u_uart_tx/r_tx_shift[4]/q u_uart_tx/r_tx_shift_reg_4/Q -type DFF DFF
 add mapped point u_uart_tx/r_tx_shift[5]/q u_uart_tx/r_tx_shift_reg_5/Q -type DFF DFF
-add mapped point u_uart_tx/r_tx_shift[6]/q u_uart_tx/r_tx_shift_reg_6/Q -type DFF DFF
 add mapped point u_uart_tx/r_tx_shift[0]/q u_uart_tx/r_tx_shift_reg_0/Q -type DFF DFF
+add mapped point u_uart_tx/r_tx_shift[6]/q u_uart_tx/r_tx_shift_reg_6/Q -type DFF DFF
 
 
 

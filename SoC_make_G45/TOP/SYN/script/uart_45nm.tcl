@@ -12,10 +12,12 @@ puts "Hostname : [info hostname]"
 
 set TOP_DESIGN uart_top 
 
-set LOG_DIR     "./log"
-set RPT_DIR     "./report"
-set UNMAPPED_DIR   "./unmapped"
-set MAPPED_DIR     "./mapped"
+set LOG_DIR     "./uart_log"
+set RPT_DIR     "./uart_report"
+set UNMAPPED_DIR   "./uart_unmapped"
+set MAPPED_DIR     "./uart_mapped"
+
+file mkdir ${LOG_DIR} ${RPT_DIR} ${UNMAPPED_DIR} ${MAPPED_DIR}
 
 #GPDK 045 SVT
 set STD_LIB_PATH "/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing"
@@ -111,7 +113,7 @@ write_snapshot -outdir ${RPT_DIR} -tag syn_generic
 #report_summary -directory $_REPORTS_PATH
 #summary_table -directory ${RPT_DIR}
 
-write_db -to_file  ${UNMAPPED_DIR}/syn_generic.db
+write_db -to_file  ${UNMAPPED_DIR}/uart_syn_generic.db
 
 ####################################################################################################
 ## Synthesizing to gates
