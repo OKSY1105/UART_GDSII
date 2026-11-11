@@ -1,0 +1,81 @@
+xrun(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s012: Started on Nov 11, 2026 at 20:27:05 KST
+xrun
+	-64bit
+	-sv
+	-top tb_cpu8_top
+	-incdir /home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8
+	/home/hah010/UART_GDSII/SoC_make_G45/TOP/SIM/TESTBENCH/tb_cpu8_top.sv
+	/home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8/cpu8_top.v
+	/home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8/cpu8_decoder.v
+	/home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8/cpu8_regfile.v
+	/home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8/cpu8_alu.v
+	-l xrun.log
+file: /home/hah010/UART_GDSII/SoC_make_G45/TOP/SIM/TESTBENCH/tb_cpu8_top.sv
+	module worklib.tb_cpu8_top:sv
+		errors: 0, warnings: 0
+file: /home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8/cpu8_top.v
+	module worklib.cpu8_top:v
+		errors: 0, warnings: 0
+file: /home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8/cpu8_decoder.v
+	module worklib.cpu8_decoder:v
+		errors: 0, warnings: 0
+file: /home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8/cpu8_regfile.v
+	module worklib.cpu8_regfile:v
+		errors: 0, warnings: 0
+file: /home/hah010/UART_GDSII/SoC_make_G45/TOP/RTL/cpu8/cpu8_alu.v
+	module worklib.cpu8_alu:v
+		errors: 0, warnings: 0
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_cpu8_top
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.cpu8_alu:v <0x7e14852f>
+			streams:   1, words:  1752
+		worklib.cpu8_regfile:v <0x39029470>
+			streams:   7, words:  2552
+		worklib.cpu8_decoder:v <0x33e32ab8>
+			streams:   2, words:  6706
+		worklib.cpu8_top:v <0x220fd2d1>
+			streams:  77, words: 32702
+		worklib.tb_cpu8_top:sv <0x719b35c6>
+			streams:  21, words: 19594
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       5
+		Registers:              89      89
+		Scalar wires:           65       -
+		Expanded wires:          4       1
+		Vectored wires:         40       -
+		Always blocks:           7       7
+		Initial blocks:         10      10
+		Cont. assignments:      37      64
+		Pseudo assignments:      4       4
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_cpu8_top:sv
+Loading snapshot worklib.tb_cpu8_top:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /tools/cadence/XCELIUM2203/tools/xcelium/files/xmsimrc
+xcelium> run
+RETIRE pc=0000 instr=0805 write=1 rd=0 data=05
+RETIRE pc=0001 instr=0903 write=1 rd=1 data=03
+RETIRE pc=0002 instr=2401 write=1 rd=0 data=08
+RETIRE pc=0003 instr=1820 write=0 rd=0 data=05
+STORE addr=0020 data=08
+RETIRE pc=0004 instr=1400 write=0 rd=0 data=00
+RETIRE pc=0005 instr=1200 write=1 rd=2 data=08
+RETIRE pc=0006 instr=3200 write=0 rd=2 data=00
+RETIRE pc=0007 instr=5401 write=0 rd=0 data=03
+RETIRE pc=0009 instr=0901 write=1 rd=1 data=01
+RETIRE pc=000a instr=2e01 write=1 rd=2 data=07
+RETIRE pc=000b instr=0400 write=0 rd=0 data=08
+CPU8_RTL_SIM=PASS cycles=20 retired=11 stores=1 regs=00070108 x=0020 flags=2 pc=000c mem20=08
+Simulation complete via $finish(1) at time 220 NS + 0
+/home/hah010/UART_GDSII/SoC_make_G45/TOP/SIM/TESTBENCH/tb_cpu8_top.sv:139                 $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.03-s012: Exiting on Nov 11, 2026 at 20:27:06 KST  (total: 00:00:01)
