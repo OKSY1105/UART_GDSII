@@ -3,3 +3,4 @@ cortexm0_designstart/
 Merge/
 SW_install/
 CSHRC/
+/SoC_make_G45/TOP/SIM/TESTBENCH/tb_cpu8_top.sv

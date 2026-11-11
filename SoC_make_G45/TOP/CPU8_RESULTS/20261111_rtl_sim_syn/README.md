@@ -26,3 +26,4 @@
 ## 범위
 
 이 검증은 하나의 HEX 프로그램과 대기 사이클이 없는 메모리 모델을 사용한 CPU 단독 기능 확인이다. 모든 명령, 인터럽트, 버스 오류·대기, UART 통합 동작을 검증한 결과는 아니다. 10 ns 합성 수치는 임시 SDC와 합성 단계 추정치이며 배치·배선 후 STA 결과가 아니다. LEC는 사용 가능한 툴이 없어 실행하지 않았다.
+- Testbench source is kept on the server only and excluded from Git; a fresh clone needs a separate copy to rerun SIM.
