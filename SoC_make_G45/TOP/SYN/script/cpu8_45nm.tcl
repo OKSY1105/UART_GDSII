@@ -1,5 +1,5 @@
 # CPU8 block synthesis based on the UART GPDK045 flow.
-# Execute via SYN/run_cpu8_synthesis.sh; all outputs stay in CPU8_SYN_RUN_DIR.
+# Execute via SYN/run_cpu8_synthesis.sh; CPU outputs use fixed SYN/cpu8_* paths.
 if {![info exists ::env(CPU8_TOP_DIR)] || ![info exists ::env(CPU8_SYN_RUN_DIR)]} {
     error "Use SYN/run_cpu8_synthesis.sh to set the top and run directories"
 }
@@ -7,9 +7,9 @@ set top_dir [file normalize $::env(CPU8_TOP_DIR)]
 set run_dir [file normalize $::env(CPU8_SYN_RUN_DIR)]
 set cpu_dir [file join $top_dir RTL cpu8]
 set syn_dir [file join $top_dir SYN]
-set rpt_dir [file join $run_dir report]
-set unmapped_dir [file join $run_dir unmapped]
-set mapped_dir [file join $run_dir mapped]
+set rpt_dir [file join $run_dir cpu8_report]
+set unmapped_dir [file join $run_dir cpu8_unmapped]
+set mapped_dir [file join $run_dir cpu8_mapped]
 file mkdir $rpt_dir $unmapped_dir $mapped_dir
 
 set pdk /GPDK045/digital
@@ -70,5 +70,5 @@ write_design -basename [file join $mapped_dir cpu8_top_mapped]
 write_hdl > [file join $mapped_dir cpu8_top_syn_final.v]
 write_sdc > [file join $mapped_dir cpu8_top_syn_final.sdc]
 write_sdf -timescale ns -nonegchecks -recrem split -edges check_edge -setuphold split > [file join $mapped_dir cpu8_top_delays.sdf]
-puts "CPU8_SYN_OUTPUT=$run_dir"
+puts "CPU8_SYN_OUTPUT=$mapped_dir"
 quit

@@ -30,36 +30,28 @@ echo 'CPU8_SYN_PREFLIGHT=PASS'
 if [[ "${1:-}" == '--dry-run' ]]; then exit 0; fi
 if [[ $# -ne 0 ]]; then echo "Usage: $0 [--dry-run]" >&2; exit 2; fi
 
-run_id=$(date +%Y%m%d_%H%M%S)_$$
-run_dir="$syn_dir/cpu8_runs/$run_id"
-mkdir -p "$run_dir/log" "$run_dir/report" "$run_dir/unmapped" "$run_dir/mapped"
+run_dir="$syn_dir"
+log_dir="$syn_dir/cpu8_log"
+mapped_dir="$syn_dir/cpu8_mapped"
+unmapped_dir="$syn_dir/cpu8_unmapped"
+mkdir -p "$log_dir" "$syn_dir/cpu8_report" "$mapped_dir" "$unmapped_dir"
 export CPU8_TOP_DIR="$top_dir" CPU8_SYN_RUN_DIR="$run_dir"
-echo "CPU8_SYN_RUN_DIR=$run_dir"
-if ! (cd "$syn_dir" && genus -f "$script" -log "$run_dir/log/genus.log" >"$run_dir/log/console.log" 2>&1); then
-  echo "CPU8_SYN=FAIL see $run_dir/log/console.log"; exit 1
+touch "$log_dir/run_started"
+echo "CPU8_MAPPED_DIR=$mapped_dir"
+echo "CPU8_UNMAPPED_DIR=$unmapped_dir"
+if ! (cd "$syn_dir" && genus -f "$script" -log "$log_dir/genus.log" >"$log_dir/console.log" 2>&1); then
+  echo "CPU8_SYN=FAIL see $log_dir/console.log"; exit 1
 fi
 for file in cpu8_top_syn_final.v cpu8_top_syn_final.sdc cpu8_top_delays.sdf; do
-  if [[ ! -s "$run_dir/mapped/$file" ]]; then
-    echo "CPU8_SYN=FAIL missing output: $run_dir/mapped/$file"; exit 1
+  if [[ ! -s "$mapped_dir/$file" || ! "$mapped_dir/$file" -nt "$log_dir/run_started" ]]; then
+    echo "CPU8_SYN=FAIL missing or stale output: $mapped_dir/$file"; exit 1
   fi
 done
-if grep -Eq '\*\*ERROR|^ERROR:' "$run_dir/log/console.log"; then
-  echo "CPU8_SYN=FAIL errors in $run_dir/log/console.log"; exit 1
+if [[ ! -s "$unmapped_dir/cpu8_top_generic.db" ||
+      ! "$unmapped_dir/cpu8_top_generic.db" -nt "$log_dir/run_started" ]]; then
+  echo "CPU8_SYN=FAIL missing or stale output: $unmapped_dir/cpu8_top_generic.db"; exit 1
 fi
-# Publish the latest successful outputs at predictable paths. Keep the
-# timestamped run directory as an archive of logs, reports, and original data.
-mkdir -p "$syn_dir/cpu8_mapped" "$syn_dir/cpu8_unmapped"
-cp -a "$run_dir/mapped/." "$syn_dir/cpu8_mapped/"
-cp -a "$run_dir/unmapped/." "$syn_dir/cpu8_unmapped/"
-for file in cpu8_top_syn_final.v cpu8_top_syn_final.sdc cpu8_top_delays.sdf; do
-  if ! cmp -s "$run_dir/mapped/$file" "$syn_dir/cpu8_mapped/$file"; then
-    echo "CPU8_SYN=FAIL published output differs: $file" >&2; exit 1
-  fi
-done
-if ! cmp -s "$run_dir/unmapped/cpu8_top_generic.db" \
-             "$syn_dir/cpu8_unmapped/cpu8_top_generic.db"; then
-  echo 'CPU8_SYN=FAIL published unmapped DB differs' >&2; exit 1
+if grep -Eq '\*\*ERROR|^ERROR:' "$log_dir/console.log"; then
+  echo "CPU8_SYN=FAIL errors in $log_dir/console.log"; exit 1
 fi
-echo "CPU8_MAPPED_DIR=$syn_dir/cpu8_mapped"
-echo "CPU8_UNMAPPED_DIR=$syn_dir/cpu8_unmapped"
 echo 'CPU8_SYN=PASS'
