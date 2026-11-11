@@ -46,4 +46,20 @@ done
 if grep -Eq '\*\*ERROR|^ERROR:' "$run_dir/log/console.log"; then
   echo "CPU8_SYN=FAIL errors in $run_dir/log/console.log"; exit 1
 fi
+# Publish the latest successful outputs at predictable paths. Keep the
+# timestamped run directory as an archive of logs, reports, and original data.
+mkdir -p "$syn_dir/cpu8_mapped" "$syn_dir/cpu8_unmapped"
+cp -a "$run_dir/mapped/." "$syn_dir/cpu8_mapped/"
+cp -a "$run_dir/unmapped/." "$syn_dir/cpu8_unmapped/"
+for file in cpu8_top_syn_final.v cpu8_top_syn_final.sdc cpu8_top_delays.sdf; do
+  if ! cmp -s "$run_dir/mapped/$file" "$syn_dir/cpu8_mapped/$file"; then
+    echo "CPU8_SYN=FAIL published output differs: $file" >&2; exit 1
+  fi
+done
+if ! cmp -s "$run_dir/unmapped/cpu8_top_generic.db" \
+             "$syn_dir/cpu8_unmapped/cpu8_top_generic.db"; then
+  echo 'CPU8_SYN=FAIL published unmapped DB differs' >&2; exit 1
+fi
+echo "CPU8_MAPPED_DIR=$syn_dir/cpu8_mapped"
+echo "CPU8_UNMAPPED_DIR=$syn_dir/cpu8_unmapped"
 echo 'CPU8_SYN=PASS'
