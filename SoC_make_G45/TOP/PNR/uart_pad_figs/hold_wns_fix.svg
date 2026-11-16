@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#dcfce7"/><line x1="0" y1="0" x2="0" y2="6" stroke="#86efac" stroke-width="2"/></pattern></defs>
+<rect x="0.50" y="0.50" width="759.00" height="329.00" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1" />
+<text x="24.00" y="32.00" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">Hold WNS before and after each fix (FUNC_FF_BEST)</text>
+<text x="24.00" y="52.00" font-size="12" fill="#6b7280" text-anchor="start" font-weight="normal">Negative = violation.  "before" values come from the experiment runs recorded during this work.</text>
+<line x1="380.00" y1="70.00" x2="380.00" y2="278.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="380.00" y="294.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">-0.25</text>
+<line x1="428.33" y1="70.00" x2="428.33" y2="278.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="428.33" y="294.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">-0.20</text>
+<line x1="476.67" y1="70.00" x2="476.67" y2="278.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="476.67" y="294.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">-0.15</text>
+<line x1="525.00" y1="70.00" x2="525.00" y2="278.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="525.00" y="294.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">-0.10</text>
+<line x1="573.33" y1="70.00" x2="573.33" y2="278.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="573.33" y="294.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">-0.05</text>
+<line x1="621.67" y1="70.00" x2="621.67" y2="278.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="621.67" y="294.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0</text>
+<line x1="670.00" y1="70.00" x2="670.00" y2="278.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="670.00" y="294.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">+0.05</text>
+<line x1="621.67" y1="70.00" x2="621.67" y2="278.00" stroke="#1f2937" stroke-width="1.5"/>
+<text x="621.67" y="310.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">hold slack (ns)</text>
+<text x="24.00" y="91.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">Step 3 PostCTSopt</text>
+<text x="24.00" y="106.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">before fix (optDesign -postCTS -hold once)</text>
+<rect x="394.50" y="84.00" width="227.17" height="22.00" rx="2" fill="#dc2626" stroke="none" stroke-width="1" />
+<text x="388.50" y="100.00" font-size="11" fill="#dc2626" text-anchor="end" font-weight="bold">-0.235 ns, 211 violating</text>
+<text x="24.00" y="131.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">Step 3 PostCTSopt</text>
+<text x="24.00" y="146.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">after fix (input buffers + hold opt x2)</text>
+<rect x="621.67" y="124.00" width="2.50" height="22.00" rx="2" fill="#16a34a" stroke="none" stroke-width="1" />
+<text x="629.60" y="140.00" font-size="11" fill="#16a34a" text-anchor="start" font-weight="bold">+0.002 ns, 0 violating</text>
+<text x="24.00" y="171.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">Step 4 RouteDesign</text>
+<text x="24.00" y="186.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">before fix (hold opt once)</text>
+<rect x="620.70" y="164.00" width="2.50" height="22.00" rx="2" fill="#dc2626" stroke="none" stroke-width="1" />
+<text x="614.70" y="180.00" font-size="11" fill="#dc2626" text-anchor="end" font-weight="bold">-0.001 ns, 1 violating</text>
+<text x="24.00" y="211.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">Step 4 RouteDesign</text>
+<text x="24.00" y="226.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">after fix (2nd optDesign -postRoute -hold)</text>
+<rect x="621.67" y="204.00" width="2.90" height="22.00" rx="2" fill="#16a34a" stroke="none" stroke-width="1" />
+<text x="630.57" y="220.00" font-size="11" fill="#16a34a" text-anchor="start" font-weight="bold">+0.003 ns, 0 violating</text>
+<text x="24.00" y="251.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">Step 5 ChipFinish</text>
+<text x="24.00" y="266.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">final</text>
+<rect x="621.67" y="244.00" width="2.90" height="22.00" rx="2" fill="#16a34a" stroke="none" stroke-width="1" />
+<text x="630.57" y="260.00" font-size="11" fill="#16a34a" text-anchor="start" font-weight="bold">+0.003 ns, 0 violating</text>
+</svg>

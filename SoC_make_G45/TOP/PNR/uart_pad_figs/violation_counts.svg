@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#dcfce7"/><line x1="0" y1="0" x2="0" y2="6" stroke="#86efac" stroke-width="2"/></pattern></defs>
+<rect x="0.50" y="0.50" width="759.00" height="329.00" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1" />
+<text x="24.00" y="32.00" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">Violation counts while fixing the pad-less ports</text>
+<text x="36.00" y="62.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">(a) Step 3: hold/removal violating paths</text>
+<line x1="42.00" y1="260.00" x2="368.00" y2="260.00" stroke="#1f2937" stroke-width="1"/>
+<rect x="74.33" y="85.04" width="44.00" height="174.96" rx="2" fill="#dc2626" stroke="none" stroke-width="1" />
+<text x="96.33" y="78.04" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="bold">486</text>
+<text x="96.33" y="278.00" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">before hold opt</text>
+<rect x="183.00" y="184.04" width="44.00" height="75.96" rx="2" fill="#dc2626" stroke="none" stroke-width="1" />
+<text x="205.00" y="177.04" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="bold">211</text>
+<text x="205.00" y="278.00" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">optDesign</text>
+<text x="205.00" y="292.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">-postCTS -hold</text>
+<rect x="291.67" y="257.00" width="44.00" height="3.00" rx="0" fill="#16a34a" stroke="none" stroke-width="1" />
+<text x="313.67" y="253.00" font-size="13" fill="#16a34a" text-anchor="middle" font-weight="bold">0</text>
+<text x="313.67" y="278.00" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">+ input buffers</text>
+<text x="313.67" y="292.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">+ hold opt x2</text>
+<text x="386.00" y="62.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">(b) Step 4: max_tran violating nets</text>
+<line x1="392.00" y1="260.00" x2="718.00" y2="260.00" stroke="#1f2937" stroke-width="1"/>
+<rect x="410.75" y="101.60" width="44.00" height="158.40" rx="2" fill="#dc2626" stroke="none" stroke-width="1" />
+<text x="432.75" y="94.60" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="bold">22</text>
+<text x="432.75" y="278.00" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">no signal pads</text>
+<rect x="492.25" y="224.00" width="44.00" height="36.00" rx="2" fill="#dc2626" stroke="none" stroke-width="1" />
+<text x="514.25" y="217.00" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="bold">5</text>
+<text x="514.25" y="278.00" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">pads, inputs</text>
+<text x="514.25" y="292.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">at corners</text>
+<rect x="573.75" y="252.80" width="44.00" height="7.20" rx="2" fill="#dc2626" stroke="none" stroke-width="1" />
+<text x="595.75" y="245.80" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="bold">1</text>
+<text x="595.75" y="278.00" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">inputs moved</text>
+<text x="595.75" y="292.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">to middle</text>
+<rect x="655.25" y="257.00" width="44.00" height="3.00" rx="0" fill="#16a34a" stroke="none" stroke-width="1" />
+<text x="677.25" y="253.00" font-size="13" fill="#16a34a" text-anchor="middle" font-weight="bold">0</text>
+<text x="677.25" y="278.00" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">+ clock root</text>
+<text x="677.25" y="292.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">buffer</text>
+</svg>

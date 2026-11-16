@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="934" height="754" viewBox="0 0 934 754" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#dcfce7"/><line x1="0" y1="0" x2="0" y2="6" stroke="#86efac" stroke-width="2"/></pattern></defs>
+<rect x="0.50" y="0.50" width="933.00" height="753.00" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1" />
+<text x="24.00" y="30.00" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">Chip plan: die 1748 x 1748 um, 46 pads</text>
+<text x="24.00" y="48.00" font-size="12" fill="#6b7280" text-anchor="start" font-weight="normal">Signal pads added by the step 4 ECO are outlined in black.</text>
+<rect x="30.00" y="60.00" width="664.24" height="664.24" rx="0" fill="#f9fafb" stroke="#1f2937" stroke-width="1.2" />
+<rect x="30.00" y="60.00" width="664.24" height="91.20" rx="0" fill="#e5e7eb" stroke="none" stroke-width="1" />
+<rect x="30.00" y="633.04" width="664.24" height="91.20" rx="0" fill="#e5e7eb" stroke="none" stroke-width="1" />
+<rect x="30.00" y="60.00" width="91.20" height="664.24" rx="0" fill="#e5e7eb" stroke="none" stroke-width="1" />
+<rect x="603.04" y="60.00" width="91.20" height="664.24" rx="0" fill="#e5e7eb" stroke="none" stroke-width="1" />
+<rect x="30.00" y="633.04" width="91.20" height="91.20" rx="0" fill="#cbd5e1" stroke="#ffffff" stroke-width="1" />
+<rect x="603.04" y="633.04" width="91.20" height="91.20" rx="0" fill="#cbd5e1" stroke="#ffffff" stroke-width="1" />
+<rect x="30.00" y="60.00" width="91.20" height="91.20" rx="0" fill="#cbd5e1" stroke="#ffffff" stroke-width="1" />
+<rect x="603.04" y="60.00" width="91.20" height="91.20" rx="0" fill="#cbd5e1" stroke="#ffffff" stroke-width="1" />
+<rect x="273.20" y="303.20" width="177.84" height="177.84" rx="0" fill="#dbeafe" stroke="#2563eb" stroke-width="1" />
+<text x="362.12" y="321.20" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="bold">core 468 x 468 um</text>
+<text x="362.12" y="336.20" font-size="10" fill="#2563eb" text-anchor="middle" font-weight="normal">(core margin 640 um)</text>
+<rect x="30.00" y="532.72" width="91.20" height="22.80" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="0.8" />
+<text x="75.60" y="547.62" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">vddior_w</text>
+<rect x="30.00" y="456.72" width="91.20" height="22.80" rx="0" fill="#4b5563" stroke="#ffffff" stroke-width="0.8" />
+<text x="75.60" y="471.62" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="normal">vdd_w</text>
+<rect x="30.00" y="380.72" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#ffffff" stroke-width="0.8" />
+<text x="75.60" y="395.62" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">uart_rx</text>
+<rect x="30.00" y="304.72" width="91.20" height="22.80" rx="0" fill="#4b5563" stroke="#ffffff" stroke-width="0.8" />
+<text x="75.60" y="319.62" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="normal">vss_w</text>
+<rect x="30.00" y="228.72" width="91.20" height="22.80" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="0.8" />
+<text x="75.60" y="243.62" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">vssior_w</text>
+<rect x="236.72" y="60.00" width="22.80" height="91.20" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="0.8" />
+<text x="251.12" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 251.12 105.60)">vddior_n</text>
+<rect x="312.72" y="60.00" width="22.80" height="91.20" rx="0" fill="#4b5563" stroke="#ffffff" stroke-width="0.8" />
+<text x="327.12" y="105.60" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="normal" transform="rotate(-90 327.12 105.60)">vdd_n</text>
+<rect x="388.72" y="60.00" width="22.80" height="91.20" rx="0" fill="#4b5563" stroke="#ffffff" stroke-width="0.8" />
+<text x="403.12" y="105.60" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="normal" transform="rotate(-90 403.12 105.60)">vss_n</text>
+<rect x="464.72" y="60.00" width="22.80" height="91.20" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="0.8" />
+<text x="479.12" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 479.12 105.60)">vssior_n</text>
+<rect x="603.04" y="532.72" width="91.20" height="22.80" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="0.8" />
+<text x="648.64" y="547.62" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">vddior_e</text>
+<rect x="603.04" y="456.72" width="91.20" height="22.80" rx="0" fill="#4b5563" stroke="#ffffff" stroke-width="0.8" />
+<text x="648.64" y="471.62" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="normal">vdd_e</text>
+<rect x="603.04" y="380.72" width="91.20" height="22.80" rx="0" fill="#fb923c" stroke="#ffffff" stroke-width="0.8" />
+<text x="648.64" y="395.62" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">uart_tx</text>
+<rect x="603.04" y="304.72" width="91.20" height="22.80" rx="0" fill="#4b5563" stroke="#ffffff" stroke-width="0.8" />
+<text x="648.64" y="319.62" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="normal">vss_e</text>
+<rect x="603.04" y="228.72" width="91.20" height="22.80" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="0.8" />
+<text x="648.64" y="243.62" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">vssior_e</text>
+<rect x="236.72" y="633.04" width="22.80" height="91.20" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="0.8" />
+<text x="251.12" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 251.12 678.64)">vddior_s</text>
+<rect x="312.72" y="633.04" width="22.80" height="91.20" rx="0" fill="#4b5563" stroke="#ffffff" stroke-width="0.8" />
+<text x="327.12" y="678.64" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="normal" transform="rotate(-90 327.12 678.64)">vdd_s</text>
+<rect x="388.72" y="633.04" width="22.80" height="91.20" rx="0" fill="#4b5563" stroke="#ffffff" stroke-width="0.8" />
+<text x="403.12" y="678.64" font-size="8.5" fill="#ffffff" text-anchor="middle" font-weight="normal" transform="rotate(-90 403.12 678.64)">vss_s</text>
+<rect x="464.72" y="633.04" width="22.80" height="91.20" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="0.8" />
+<text x="479.12" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 479.12 678.64)">vssior_s</text>
+<rect x="30.00" y="411.12" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="75.60" y="426.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">clk</text>
+<rect x="30.00" y="487.12" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="75.60" y="502.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">rst_n</text>
+<rect x="30.00" y="335.12" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="75.60" y="350.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">rhr_re</text>
+<rect x="30.00" y="259.12" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="75.60" y="274.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">thr_we</text>
+<rect x="30.00" y="587.44" width="91.20" height="22.80" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="75.60" y="602.34" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">rdata[0]</text>
+<rect x="30.00" y="560.84" width="91.20" height="22.80" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="75.60" y="575.74" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">rdata[1]</text>
+<rect x="30.00" y="183.12" width="91.20" height="22.80" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="75.60" y="198.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">rdata[2]</text>
+<rect x="282.32" y="633.04" width="22.80" height="91.20" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="296.72" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 296.72 678.64)">wdata[5]</text>
+<rect x="358.32" y="633.04" width="22.80" height="91.20" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="372.72" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 372.72 678.64)">wdata[6]</text>
+<rect x="434.32" y="633.04" width="22.80" height="91.20" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="448.72" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 448.72 678.64)">wdata[7]</text>
+<rect x="144.00" y="633.04" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="158.40" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 158.40 678.64)">rdata[3]</text>
+<rect x="182.00" y="633.04" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="196.40" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 196.40 678.64)">rdata[4]</text>
+<rect x="510.32" y="633.04" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="524.72" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 524.72 678.64)">lsr_dr</text>
+<rect x="548.32" y="633.04" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="562.72" y="678.64" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 562.72 678.64)">lsr_thre</text>
+<rect x="603.04" y="487.12" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="648.64" y="502.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">wdata[0]</text>
+<rect x="603.04" y="411.12" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="648.64" y="426.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">wdata[1]</text>
+<rect x="603.04" y="335.12" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="648.64" y="350.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">wdata[2]</text>
+<rect x="603.04" y="259.12" width="91.20" height="22.80" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="648.64" y="274.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">wdata[3]</text>
+<rect x="603.04" y="587.44" width="91.20" height="22.80" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="648.64" y="602.34" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">rdata[5]</text>
+<rect x="603.04" y="560.84" width="91.20" height="22.80" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="648.64" y="575.74" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">rdata[6]</text>
+<rect x="603.04" y="183.12" width="91.20" height="22.80" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="648.64" y="198.02" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal">rdata[7]</text>
+<rect x="282.32" y="60.00" width="22.80" height="91.20" rx="0" fill="#60a5fa" stroke="#111827" stroke-width="1.6" />
+<text x="296.72" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 296.72 105.60)">wdata[4]</text>
+<rect x="144.00" y="60.00" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="158.40" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 158.40 105.60)">lsr_temt</text>
+<rect x="182.00" y="60.00" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="196.40" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 196.40 105.60)">lsr_fe</text>
+<rect x="358.32" y="60.00" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="372.72" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 372.72 105.60)">lsr_pe</text>
+<rect x="434.32" y="60.00" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="448.72" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 448.72 105.60)">lsr_oe</text>
+<rect x="510.32" y="60.00" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="524.72" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 524.72 105.60)">tx_full</text>
+<rect x="548.32" y="60.00" width="22.80" height="91.20" rx="0" fill="#fb923c" stroke="#111827" stroke-width="1.6" />
+<text x="562.72" y="105.60" font-size="8.5" fill="#1f2937" text-anchor="middle" font-weight="normal" transform="rotate(-90 562.72 105.60)">rx_full</text>
+<line x1="121.20" y1="422.52" x2="273.96" y2="421.76" stroke="#7c3aed" stroke-width="1.5" stroke-dasharray="4 3"/>
+<rect x="269.96" y="417.76" width="8.00" height="8.00" rx="0" fill="#7c3aed" stroke="none" stroke-width="1" />
+<text x="129.20" y="413.76" font-size="10" fill="#7c3aed" text-anchor="start" font-weight="bold">clock pad -&gt; CLKBUFX8</text>
+<text x="129.20" y="437.76" font-size="10" fill="#7c3aed" text-anchor="start" font-weight="normal">root buffer at (642, 796)</text>
+<rect x="351.86" y="389.08" width="25.08" height="16.72" rx="0" fill="none" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="3 2"/>
+<text x="364.40" y="419.80" font-size="10" fill="#7c3aed" text-anchor="middle" font-weight="normal">clock tree buffers</text>
+<rect x="724.00" y="70.00" width="14.00" height="14.00" rx="2" fill="#60a5fa" stroke="none" stroke-width="1" />
+<text x="744.00" y="81.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">input pad PADDI</text>
+<rect x="724.00" y="92.00" width="14.00" height="14.00" rx="2" fill="#fb923c" stroke="none" stroke-width="1" />
+<text x="744.00" y="103.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">output pad PADDO</text>
+<rect x="724.00" y="114.00" width="14.00" height="14.00" rx="2" fill="#4b5563" stroke="none" stroke-width="1" />
+<text x="744.00" y="125.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">core power PADVDD / PADVSS</text>
+<rect x="724.00" y="136.00" width="14.00" height="14.00" rx="2" fill="#9ca3af" stroke="none" stroke-width="1" />
+<text x="744.00" y="147.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">IO power PADVDDIOR / PADVSSIOR</text>
+<rect x="724.00" y="158.00" width="14.00" height="14.00" rx="2" fill="#e5e7eb" stroke="none" stroke-width="1" />
+<text x="744.00" y="169.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">IO filler (ring)</text>
+<rect x="724.00" y="180.00" width="14.00" height="14.00" rx="2" fill="#cbd5e1" stroke="none" stroke-width="1" />
+<text x="744.00" y="191.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">corner cell</text>
+<rect x="724.00" y="202.00" width="14.00" height="14.00" rx="2" fill="#ffffff" stroke="#111827" stroke-width="1.6" />
+<text x="744.00" y="213.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">added by step 4 ECO</text>
+<text x="724.00" y="238.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">Pads: 46</text>
+<text x="724.00" y="255.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">  input 13, output 17</text>
+<text x="724.00" y="272.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">  power 16</text>
+<text x="724.00" y="289.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">Inputs sit in the middle slots</text>
+<text x="724.00" y="306.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">(564-1164) near the core;</text>
+<text x="724.00" y="323.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">outputs use the corner slots.</text>
+</svg>

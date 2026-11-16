@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#dcfce7"/><line x1="0" y1="0" x2="0" y2="6" stroke="#86efac" stroke-width="2"/></pattern></defs>
+<rect x="0.50" y="0.50" width="759.00" height="329.00" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1" />
+<text x="24.00" y="32.00" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">Worst hold-type path after ChipFinish: slack +0.003 ns (FUNC_FF_BEST)</text>
+<text x="24.00" y="52.00" font-size="12" fill="#6b7280" text-anchor="start" font-weight="normal">Removal check: i_rst_n  -&gt;  u_uart_tx/u_tx_fifo/w_ptradr_reg_1/RN</text>
+<line x1="150.00" y1="70.00" x2="150.00" y2="200.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="150.00" y="215.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.0</text>
+<line x1="266.00" y1="70.00" x2="266.00" y2="200.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="266.00" y="215.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.1</text>
+<line x1="382.00" y1="70.00" x2="382.00" y2="200.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="382.00" y="215.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.2</text>
+<line x1="498.00" y1="70.00" x2="498.00" y2="200.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="498.00" y="215.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.3</text>
+<line x1="614.00" y1="70.00" x2="614.00" y2="200.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="614.00" y="215.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.4</text>
+<line x1="730.00" y1="70.00" x2="730.00" y2="200.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="730.00" y="215.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.5</text>
+<text x="140.00" y="105.00" font-size="12" fill="#1f2937" text-anchor="end" font-weight="bold">required</text>
+<rect x="150.00" y="86.00" width="232.00" height="30.00" rx="0" fill="#c4b5fd" stroke="#ffffff" stroke-width="1" />
+<rect x="382.00" y="86.00" width="126.44" height="30.00" rx="0" fill="#7c3aed" stroke="#ffffff" stroke-width="1" />
+<rect x="508.44" y="86.00" width="111.36" height="30.00" rx="0" fill="#a78bfa" stroke="#ffffff" stroke-width="1" />
+<rect x="619.80" y="86.00" width="46.40" height="30.00" rx="0" fill="#475569" stroke="#ffffff" stroke-width="1" />
+<text x="140.00" y="159.00" font-size="12" fill="#1f2937" text-anchor="end" font-weight="bold">reset arrival</text>
+<rect x="150.00" y="140.00" width="49.88" height="30.00" rx="0" fill="#ea580c" stroke="#ffffff" stroke-width="1" />
+<rect x="199.88" y="140.00" width="80.04" height="30.00" rx="0" fill="#2563eb" stroke="#ffffff" stroke-width="1" />
+<rect x="279.92" y="140.00" width="383.96" height="30.00" rx="0" fill="#d97706" stroke="#ffffff" stroke-width="1" />
+<rect x="663.88" y="140.00" width="4.64" height="30.00" rx="0" fill="#9ca3af" stroke="#ffffff" stroke-width="1" />
+<line x1="666.20" y1="76.00" x2="666.20" y2="180.00" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="660.20" y="80.00" font-size="11" fill="#1f2937" text-anchor="end" font-weight="bold">required 0.445</text>
+<text x="662.52" y="188.00" font-size="11" fill="#1f2937" text-anchor="end" font-weight="bold">arrival 0.447  (must come later than required)</text>
+<text x="380.00" y="228.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">time (ns)</text>
+<rect x="30.00" y="243.00" width="12.00" height="12.00" rx="2" fill="#c4b5fd" stroke="none" stroke-width="1" />
+<text x="47.00" y="253.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">clock source latency 0.200</text>
+<rect x="207.40" y="243.00" width="12.00" height="12.00" rx="2" fill="#7c3aed" stroke="none" stroke-width="1" />
+<text x="224.40" y="253.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">clock pad + root buffer 0.109</text>
+<rect x="402.50" y="243.00" width="12.00" height="12.00" rx="2" fill="#a78bfa" stroke="none" stroke-width="1" />
+<text x="419.50" y="253.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">clock tree to CK 0.096</text>
+<rect x="556.30" y="243.00" width="12.00" height="12.00" rx="2" fill="#475569" stroke="none" stroke-width="1" />
+<text x="573.30" y="253.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">removal requirement 0.040</text>
+<rect x="30.00" y="269.00" width="12.00" height="12.00" rx="2" fill="#ea580c" stroke="none" stroke-width="1" />
+<text x="47.00" y="279.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">input pad (PADDI) 0.043</text>
+<rect x="189.70" y="269.00" width="12.00" height="12.00" rx="2" fill="#2563eb" stroke="none" stroke-width="1" />
+<text x="206.70" y="279.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">other buffers + wires 0.069</text>
+<rect x="373.00" y="269.00" width="12.00" height="12.00" rx="2" fill="#d97706" stroke="none" stroke-width="1" />
+<text x="390.00" y="279.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">hold-fix buffers (11) + wires 0.331</text>
+<rect x="603.50" y="269.00" width="12.00" height="12.00" rx="2" fill="#9ca3af" stroke="none" stroke-width="1" />
+<text x="620.50" y="279.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">wire to RN 0.004</text>
+<text x="30.00" y="310.00" font-size="11" fill="#6b7280" text-anchor="start" font-weight="normal">Hold-fix buffers = HOLD_IN_BUF_* (step 3 ECO) and FE_PHC* (optDesign -hold).</text>
+</svg>

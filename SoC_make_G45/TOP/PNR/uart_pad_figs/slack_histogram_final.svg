@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#dcfce7"/><line x1="0" y1="0" x2="0" y2="6" stroke="#86efac" stroke-width="2"/></pattern></defs>
+<rect x="0.50" y="0.50" width="759.00" height="299.00" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1" />
+<text x="24.00" y="32.00" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">Slack of the 50 worst paths after ChipFinish (all paths meet)</text>
+<text x="24.00" y="52.00" font-size="12" fill="#6b7280" text-anchor="start" font-weight="normal">Source: uart_pad_reports/timing/final/*_all.tarpt.gz and *_all_hold.tarpt.gz</text>
+<text x="30.00" y="80.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">Setup (SS_WORST): 50 paths, min +6.103 ns</text>
+<line x1="60.00" y1="250.00" x2="360.00" y2="250.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="54.00" y="254.00" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">0</text>
+<line x1="60.00" y1="224.33" x2="360.00" y2="224.33" stroke="#e5e7eb" stroke-width="1"/>
+<text x="54.00" y="228.33" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">5</text>
+<line x1="60.00" y1="198.67" x2="360.00" y2="198.67" stroke="#e5e7eb" stroke-width="1"/>
+<text x="54.00" y="202.67" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">10</text>
+<line x1="60.00" y1="173.00" x2="360.00" y2="173.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="54.00" y="177.00" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">15</text>
+<line x1="60.00" y1="147.33" x2="360.00" y2="147.33" stroke="#e5e7eb" stroke-width="1"/>
+<text x="54.00" y="151.33" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">20</text>
+<line x1="60.00" y1="121.67" x2="360.00" y2="121.67" stroke="#e5e7eb" stroke-width="1"/>
+<text x="54.00" y="125.67" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">25</text>
+<line x1="60.00" y1="96.00" x2="360.00" y2="96.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="54.00" y="100.00" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">30</text>
+<rect x="61.00" y="224.33" width="31.33" height="25.67" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<rect x="94.33" y="234.60" width="31.33" height="15.40" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<rect x="127.67" y="244.87" width="31.33" height="5.13" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<rect x="161.00" y="244.87" width="31.33" height="5.13" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<rect x="194.33" y="244.87" width="31.33" height="5.13" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<rect x="227.67" y="239.73" width="31.33" height="10.27" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<rect x="261.00" y="244.87" width="31.33" height="5.13" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<rect x="294.33" y="214.07" width="31.33" height="35.93" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<rect x="327.67" y="101.13" width="31.33" height="148.87" rx="0" fill="#2563eb" stroke="none" stroke-width="1" />
+<text x="60.00" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">6.0</text>
+<text x="126.67" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">6.4</text>
+<text x="193.33" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">6.8</text>
+<text x="260.00" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">7.2</text>
+<text x="326.67" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">7.6</text>
+<line x1="60.00" y1="250.00" x2="360.00" y2="250.00" stroke="#1f2937" stroke-width="1"/>
+<text x="400.00" y="80.00" font-size="12" fill="#1f2937" text-anchor="start" font-weight="bold">Hold/removal (FF_BEST): 50 paths, min +0.003 ns</text>
+<line x1="430.00" y1="250.00" x2="730.00" y2="250.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="424.00" y="254.00" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">0</text>
+<line x1="430.00" y1="211.50" x2="730.00" y2="211.50" stroke="#e5e7eb" stroke-width="1"/>
+<text x="424.00" y="215.50" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">5</text>
+<line x1="430.00" y1="173.00" x2="730.00" y2="173.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="424.00" y="177.00" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">10</text>
+<line x1="430.00" y1="134.50" x2="730.00" y2="134.50" stroke="#e5e7eb" stroke-width="1"/>
+<text x="424.00" y="138.50" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">15</text>
+<line x1="430.00" y1="96.00" x2="730.00" y2="96.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="424.00" y="100.00" font-size="10" fill="#6b7280" text-anchor="end" font-weight="normal">20</text>
+<rect x="431.00" y="250.00" width="28.00" height="0.00" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="461.00" y="242.30" width="28.00" height="7.70" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="491.00" y="226.90" width="28.00" height="23.10" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="521.00" y="165.30" width="28.00" height="84.70" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="551.00" y="103.70" width="28.00" height="146.30" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="581.00" y="234.60" width="28.00" height="15.40" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="611.00" y="234.60" width="28.00" height="15.40" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="641.00" y="234.60" width="28.00" height="15.40" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="671.00" y="234.60" width="28.00" height="15.40" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<rect x="701.00" y="188.40" width="28.00" height="61.60" rx="0" fill="#0d9488" stroke="none" stroke-width="1" />
+<text x="430.00" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.002</text>
+<text x="490.00" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.004</text>
+<text x="550.00" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.006</text>
+<text x="610.00" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.008</text>
+<text x="670.00" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.010</text>
+<text x="730.00" y="265.00" font-size="10" fill="#6b7280" text-anchor="middle" font-weight="normal">0.012</text>
+<line x1="430.00" y1="250.00" x2="730.00" y2="250.00" stroke="#1f2937" stroke-width="1"/>
+<text x="195.00" y="286.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">setup slack (ns)</text>
+<text x="565.00" y="286.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">hold slack (ns)</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" viewBox="0 0 760 380" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#dcfce7"/><line x1="0" y1="0" x2="0" y2="6" stroke="#86efac" stroke-width="2"/></pattern></defs>
+<rect x="0.50" y="0.50" width="759.00" height="379.00" rx="6" fill="#ffffff" stroke="#d1d5db" stroke-width="1" />
+<text x="24.00" y="32.00" font-size="15" fill="#1f2937" text-anchor="start" font-weight="bold">Setup WNS by PnR step (FUNC_SS_WORST, clock period 10 ns)</text>
+<text x="24.00" y="52.00" font-size="12" fill="#6b7280" text-anchor="start" font-weight="normal">All steps: 0 violating paths of 693.  WNS(all) = min(reg2reg, in/out).</text>
+<line x1="70.00" y1="310.00" x2="730.00" y2="310.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62.00" y="314.00" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal">0</text>
+<line x1="70.00" y1="264.00" x2="730.00" y2="264.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62.00" y="268.00" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal">2</text>
+<line x1="70.00" y1="218.00" x2="730.00" y2="218.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62.00" y="222.00" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal">4</text>
+<line x1="70.00" y1="172.00" x2="730.00" y2="172.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62.00" y="176.00" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal">6</text>
+<line x1="70.00" y1="126.00" x2="730.00" y2="126.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62.00" y="130.00" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal">8</text>
+<line x1="70.00" y1="80.00" x2="730.00" y2="80.00" stroke="#e5e7eb" stroke-width="1"/>
+<text x="62.00" y="84.00" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal">10</text>
+<text x="22.00" y="195.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal" transform="rotate(-90 22.00 195.00)">slack (ns)</text>
+<rect x="103.50" y="129.80" width="46.00" height="180.20" rx="2" fill="#2563eb" stroke="none" stroke-width="1" />
+<text x="126.50" y="123.80" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="bold">7.835</text>
+<rect x="155.50" y="127.26" width="46.00" height="182.74" rx="2" fill="#93c5fd" stroke="none" stroke-width="1" />
+<text x="178.50" y="121.26" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">7.945</text>
+<text x="152.50" y="330.00" font-size="12" fill="#1f2937" text-anchor="middle" font-weight="normal">PlaceOpt</text>
+<text x="152.50" y="345.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">(preCTS)</text>
+<rect x="268.50" y="139.82" width="46.00" height="170.18" rx="2" fill="#2563eb" stroke="none" stroke-width="1" />
+<text x="291.50" y="133.82" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="bold">7.399</text>
+<rect x="320.50" y="130.28" width="46.00" height="179.72" rx="2" fill="#93c5fd" stroke="none" stroke-width="1" />
+<text x="343.50" y="124.28" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">7.814</text>
+<text x="317.50" y="330.00" font-size="12" fill="#1f2937" text-anchor="middle" font-weight="normal">PostCTSopt</text>
+<text x="317.50" y="345.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">(postCTS)</text>
+<rect x="433.50" y="139.82" width="46.00" height="170.18" rx="2" fill="#2563eb" stroke="none" stroke-width="1" />
+<text x="456.50" y="133.82" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">7.399</text>
+<rect x="485.50" y="169.63" width="46.00" height="140.37" rx="2" fill="#93c5fd" stroke="none" stroke-width="1" />
+<text x="508.50" y="163.63" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="bold">6.103</text>
+<text x="482.50" y="330.00" font-size="12" fill="#1f2937" text-anchor="middle" font-weight="normal">RouteDesign</text>
+<text x="482.50" y="345.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">(postRoute)</text>
+<rect x="598.50" y="139.82" width="46.00" height="170.18" rx="2" fill="#2563eb" stroke="none" stroke-width="1" />
+<text x="621.50" y="133.82" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="normal">7.399</text>
+<rect x="650.50" y="169.63" width="46.00" height="140.37" rx="2" fill="#93c5fd" stroke="none" stroke-width="1" />
+<text x="673.50" y="163.63" font-size="11" fill="#1f2937" text-anchor="middle" font-weight="bold">6.103</text>
+<text x="647.50" y="330.00" font-size="12" fill="#1f2937" text-anchor="middle" font-weight="normal">ChipFinish</text>
+<text x="647.50" y="345.00" font-size="11" fill="#6b7280" text-anchor="middle" font-weight="normal">(final)</text>
+<line x1="70.00" y1="310.00" x2="730.00" y2="310.00" stroke="#1f2937" stroke-width="1"/>
+<rect x="74.00" y="353.00" width="12.00" height="12.00" rx="2" fill="#2563eb" stroke="none" stroke-width="1" />
+<text x="91.00" y="363.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">reg2reg</text>
+<rect x="141.40" y="353.00" width="12.00" height="12.00" rx="2" fill="#93c5fd" stroke="none" stroke-width="1" />
+<text x="158.40" y="363.00" font-size="11" fill="#1f2937" text-anchor="start" font-weight="normal">in/out (default group)</text>
+<text x="730.00" y="362.00" font-size="11" fill="#6b7280" text-anchor="end" font-weight="normal">bold = WNS of the step</text>
+</svg>
