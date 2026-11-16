@@ -1,0 +1,8 @@
+VDD	./uart_pad_reports/power/static_VDD.ptiavg
+VDDIOR	./uart_pad_reports/power/static_VDDIOR.ptiavg
+VSS	./uart_pad_reports/power/static_VSS.ptiavg
+VSSIOR	./uart_pad_reports/power/static_VSSIOR.ptiavg
+VDD	./uart_pad_reports/power/static_VDD.ptiavg
+VDDIOR	./uart_pad_reports/power/static_VDDIOR.ptiavg
+VSS	./uart_pad_reports/power/static_VSS.ptiavg
+VSSIOR	./uart_pad_reports/power/static_VSSIOR.ptiavg

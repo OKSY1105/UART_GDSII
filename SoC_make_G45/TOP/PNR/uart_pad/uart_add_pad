@@ -1,0 +1,16 @@
+PADVDDIOR u_pad_vddior_w();
+PADVDD    u_pad_vdd_w();
+PADVSS    u_pad_vss_w();
+PADVSSIOR u_pad_vssior_w();
+PADVDDIOR u_pad_vddior_n();
+PADVDD    u_pad_vdd_n();
+PADVSS    u_pad_vss_n();
+PADVSSIOR u_pad_vssior_n();
+PADVDDIOR u_pad_vddior_e();
+PADVDD    u_pad_vdd_e();
+PADVSS    u_pad_vss_e();
+PADVSSIOR u_pad_vssior_e();
+PADVDDIOR u_pad_vddior_s();
+PADVDD    u_pad_vdd_s();
+PADVSS    u_pad_vss_s();
+PADVSSIOR u_pad_vssior_s();
